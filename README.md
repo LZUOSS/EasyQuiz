@@ -1,7 +1,8 @@
 EasyQuiz
 ===========
 
-This is a quiz system based on jQuery. Modified from a project shared with the public for free by the original author.
+This is a quiz system based on jQuery.<br>
+Modified from a project shared with the public for free by the original author.
 
 Usage
 -----------

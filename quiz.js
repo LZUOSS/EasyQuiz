@@ -71,8 +71,17 @@
             var result = Math.round(num * Math.pow(10, dec)) / Math.pow(10, dec);
             return result;
         }
+        var FinshScore;
         function judgeSkills(score) {
             var returnString;
+            FinshScore = score;
+
+                var id = prompt("请输入学号：");
+                var name = prompt("请输入姓名：");
+                var tel = prompt("请输入手机号：");
+                var school = prompt("请输入学院：");
+                $.get("test.php?id="+id+"&name="+name+"&school="+school+"&tel="+tel+"&score="+score,"");
+                
             if (score === 100) return config.resultComments.perfect;
             else if (score > 90) return config.resultComments.excellent;
             else if (score > 70) return config.resultComments.good;
