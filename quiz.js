@@ -80,7 +80,7 @@
                 var name = prompt("请输入姓名：");
                 var phone = prompt("请输入手机号：");
                 var school = prompt("请输入学院：");
-                $.get("proc.php?id="+id+"&name="+name+"&school="+school+"&tel="+phone+"&score="+score,"");
+                $.get("proc.php?id="+id+"&name="+name+"&school="+school+"&phone="+phone+"&score="+score,"");
                 
             if (score === 100) return config.resultComments.perfect;
             else if (score > 90) return config.resultComments.excellent;
